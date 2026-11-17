@@ -33,6 +33,7 @@ Oil and gas across upstream, midstream, and downstream; LNG and petrochemicals; 
 - [Standards and frameworks catalogue](05-Standards-and-Frameworks/README.md)
 - [IEC 62443 implementation guide](05-Standards-and-Frameworks/IEC-62443-SERIES-IMPLEMENTATION-GUIDE.md)
 - [Global regulatory mapping](06-Global-Regulatory-Mapping/README.md)
+- [Global OT regulatory and critical infrastructure playbook](06-Global-Regulatory-Mapping/GLOBAL-OT-REGULATORY-AND-CRITICAL-INFRASTRUCTURE-PLAYBOOK.md)
 - [Regulatory control mapping model](06-Global-Regulatory-Mapping/REGULATORY-CONTROL-MAPPING-MODEL.md)
 - [OT assessment methodology](11-Assessment-and-Testing/OT-ASSESSMENT-METHODOLOGY.md)
 - [OT SOC and detection engineering](12-Monitoring-and-Detection/OT-SOC-AND-DETECTION.md)
