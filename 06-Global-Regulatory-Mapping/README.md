@@ -1,3 +1,7 @@
+## Detailed playbook
+
+- [Global OT regulatory and critical infrastructure playbook](GLOBAL-OT-REGULATORY-AND-CRITICAL-INFRASTRUCTURE-PLAYBOOK.md)
+
 # Global OT Cybersecurity Regulatory Mapping
 
 ## Purpose
