@@ -82,6 +82,7 @@ Oil and gas across upstream, midstream, and downstream; LNG and petrochemicals; 
 | `15-Tools-and-Technology` | Defensive tools and industrial technologies |
 | `16-Labs-and-Simulations` | Isolated labs, exercises, test data |
 | `17-AI-and-Agent-Workflows` | AI architecture, agents, human-reviewed workflows |
+- [AI and agentic OT security engineering playbook](17-AI-and-Agent-Workflows/AI-AND-AGENTIC-OT-SECURITY-ENGINEERING-PLAYBOOK.md)
 | `18-Templates-and-Reference-Materials` | Checklists, diagrams, reusable material |
 | `19-Research-and-Learning` | Papers, books, courses, learning paths |
 | `20-Glossary-and-Indexes` | Glossary and cross-reference catalogues |
