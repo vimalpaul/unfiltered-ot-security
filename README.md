@@ -38,6 +38,7 @@ Oil and gas across upstream, midstream, and downstream; LNG and petrochemicals; 
 - [OT assessment methodology](11-Assessment-and-Testing/OT-ASSESSMENT-METHODOLOGY.md)
 - [OT security assessment, audit and testing playbook](11-Assessment-and-Testing/OT-SECURITY-ASSESSMENT-AUDIT-AND-TESTING-PLAYBOOK.md)
 - [OT SOC and detection engineering](12-Monitoring-and-Detection/OT-SOC-AND-DETECTION.md)
+- [OT SOC, industrial monitoring and detection engineering playbook](12-Monitoring-and-Detection/OT-SOC-INDUSTRIAL-MONITORING-AND-DETECTION-ENGINEERING-PLAYBOOK.md)
 - [OT incident response and recovery](13-Incident-Response-and-Recovery/OT-INCIDENT-RESPONSE.md)
 - [OT risk assessment method](14-Risk-Governance-and-Assurance/OT-RISK-ASSESSMENT-METHOD.md)
 - [AI agent governance and architecture](17-AI-and-Agent-Workflows/AI-AGENT-GOVERNANCE-AND-REFERENCE-ARCHITECTURE.md)
