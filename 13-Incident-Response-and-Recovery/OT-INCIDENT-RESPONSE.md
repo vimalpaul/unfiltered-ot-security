@@ -1228,6 +1228,14 @@ Use exact editions and verify current publication status before formal complianc
 Official starting points:
 - NIST SP 800-61 Rev. 3: https://csrc.nist.gov/pubs/sp/800/61/r3/final
 - NIST SP 800-82 Rev. 3: https://csrc.nist.gov/pubs/sp/800/82/r3/final
+
+### Publication status note checked 17 November 2026
+
+NIST SP 800-82 Rev. 3 remains the final published OT security guide located for this review. NIST has also published an Initial Public Draft of SP 800-82 Rev. 4 dated 21 September 2026, with comments due 30 November 2026. The Rev. 4 IPD is a draft, not a final publication; monitor the NIST OT Security project page and update this reference when a final revision is issued.
+
+- NIST SP 800-82 Rev. 4 Initial Public Draft: https://csrc.nist.gov/pubs/sp/800/82/r4/ipd
+- NIST OT Security publications and status: https://csrc.nist.gov/projects/operational-technology-security/publications
+
 - NIST CSF 2.0: https://www.nist.gov/cyberframework
 - ISA/IEC 62443: https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards
 - ISO 22301: https://www.iso.org/standard/75106.html
