@@ -28,6 +28,7 @@ Oil and gas across upstream, midstream, and downstream; LNG and petrochemicals; 
 
 - [Industrial reference architecture, zones, and conduits](02-Industrial-Architecture/REFERENCE-ARCHITECTURE-AND-ZONES.md)
 - [OT asset inventory and criticality](03-Industrial-Assets-and-Systems/OT-ASSET-INVENTORY-AND-CRITICALITY.md)
+- [Industrial asset technical reference — PLC, RTU, DCS, SCADA, HMI, SIS, and IED](03-Industrial-Assets-and-Systems/INDUSTRIAL-ASSET-TECHNICAL-REFERENCE.md)
 - [Industrial protocol security engineering](04-Industrial-Protocols-and-Networks/PROTOCOL-SECURITY-ENGINEERING.md)
 - [Standards and frameworks catalogue](05-Standards-and-Frameworks/README.md)
 - [IEC 62443 implementation guide](05-Standards-and-Frameworks/IEC-62443-SERIES-IMPLEMENTATION-GUIDE.md)
