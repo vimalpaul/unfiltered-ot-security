@@ -88,6 +88,7 @@ Oil and gas across upstream, midstream, and downstream; LNG and petrochemicals; 
 | `19-Research-and-Learning` | Papers, books, courses, learning paths |
 - [OT security research, threat intelligence and professional learning playbook](19-Research-and-Learning/OT-SECURITY-RESEARCH-THREAT-INTELLIGENCE-AND-LEARNING-PLAYBOOK.md)
 | `20-Glossary-and-Indexes` | Glossary and cross-reference catalogues |
+- [OT security glossary, master index and knowledge architecture](20-Glossary-and-Indexes/OT-SECURITY-GLOSSARY-MASTER-INDEX-AND-KNOWLEDGE-ARCHITECTURE.md)
 | `references` | Source register and citation guidance |
 
 ## Core principles
