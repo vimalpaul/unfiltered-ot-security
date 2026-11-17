@@ -1,5 +1,10 @@
 # Industrial Sectors and Use Cases
 
+## Master engineering playbook
+
+- [Industry-specific OT security engineering playbook](INDUSTRY-SPECIFIC-OT-SECURITY-ENGINEERING-PLAYBOOK.md)
+
+
 ## Sector model
 
 The same technology can create different risks depending on process, safety function, operating model, and consequences. Sector pages must describe process context before prescribing security controls.
