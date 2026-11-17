@@ -84,6 +84,7 @@ Oil and gas across upstream, midstream, and downstream; LNG and petrochemicals; 
 | `17-AI-and-Agent-Workflows` | AI architecture, agents, human-reviewed workflows |
 - [AI and agentic OT security engineering playbook](17-AI-and-Agent-Workflows/AI-AND-AGENTIC-OT-SECURITY-ENGINEERING-PLAYBOOK.md)
 | `18-Templates-and-Reference-Materials` | Checklists, diagrams, reusable material |
+- [OT security templates, registers, checklists and professional deliverables](18-Templates-and-Reference-Materials/OT-SECURITY-TEMPLATES-AND-PROFESSIONAL-DELIVERABLES-PLAYBOOK.md)
 | `19-Research-and-Learning` | Papers, books, courses, learning paths |
 | `20-Glossary-and-Indexes` | Glossary and cross-reference catalogues |
 | `references` | Source register and citation guidance |
