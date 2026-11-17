@@ -44,6 +44,7 @@ Oil and gas across upstream, midstream, and downstream; LNG and petrochemicals; 
 ## Industry use cases
 
 - [Industry-specific OT security engineering playbook](07-Industry-and-Use-Cases/INDUSTRY-SPECIFIC-OT-SECURITY-ENGINEERING-PLAYBOOK.md)
+- [OT vulnerability management, CVE intelligence and industrial product security](09-Vulnerabilities-and-Advisories/OT-VULNERABILITY-MANAGEMENT-AND-CVE-INTELLIGENCE.md)
 - [OT threat landscape, threat intelligence and adversary engineering](08-Threat-Intelligence/OT-THREAT-LANDSCAPE-THREAT-INTELLIGENCE-AND-ADVERSARY-ENGINEERING.md)
 - [Oil, gas, LNG, and petrochemicals](07-Industry-and-Use-Cases/OIL-GAS-AND-LNG-OT-SECURITY.md)
 - [Power, grid, and substations](07-Industry-and-Use-Cases/POWER-GRID-AND-SUBSTATION-OT-SECURITY.md)
