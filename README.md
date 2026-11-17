@@ -86,6 +86,7 @@ Oil and gas across upstream, midstream, and downstream; LNG and petrochemicals; 
 | `18-Templates-and-Reference-Materials` | Checklists, diagrams, reusable material |
 - [OT security templates, registers, checklists and professional deliverables](18-Templates-and-Reference-Materials/OT-SECURITY-TEMPLATES-AND-PROFESSIONAL-DELIVERABLES-PLAYBOOK.md)
 | `19-Research-and-Learning` | Papers, books, courses, learning paths |
+- [OT security research, threat intelligence and professional learning playbook](19-Research-and-Learning/OT-SECURITY-RESEARCH-THREAT-INTELLIGENCE-AND-LEARNING-PLAYBOOK.md)
 | `20-Glossary-and-Indexes` | Glossary and cross-reference catalogues |
 | `references` | Source register and citation guidance |
 
