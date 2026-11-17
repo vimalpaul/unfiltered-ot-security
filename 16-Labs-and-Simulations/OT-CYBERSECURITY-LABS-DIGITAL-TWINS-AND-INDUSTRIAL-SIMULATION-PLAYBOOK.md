@@ -84,7 +84,7 @@ A higher fidelity level is not automatically safer or more accurate. State exact
 
 # 4. Reference lab architecture
 
-\`\`\`mermaid
+```mermaid
 flowchart TB
   subgraph LAB["Isolated OT cyber range"]
     subgraph CELL["Process cell"]
@@ -115,7 +115,7 @@ flowchart TB
   end
   INSTR["Instructor / lab operator"] --> ORCH
   ANALYST["Learner / analyst"] --> CASE
-\`\`\`
+```
 
 This is a logical training architecture. Actual network interfaces, virtual switches, routes, container networks and host controls must be explicitly documented. The scenario orchestrator must not have a route to production control assets.
 
@@ -232,7 +232,7 @@ Do not assume that protocol presence proves a particular control function or dev
 
 # 8. Lab lifecycle and quality workflow
 
-\`\`\`mermaid
+```mermaid
 flowchart TD
   A["Define learning or validation objective"] --> B["Select process and fidelity level"]
   B --> C["Document scope, threat model and safety boundary"]
@@ -247,7 +247,7 @@ flowchart TD
   J --> K["Learner execution and evidence capture"]
   K --> L["Score, debrief and reset"]
   L --> M["Review content, dependencies and version"]
-\`\`\`
+```
 
 ## 8.1 Lab release gate
 
@@ -618,7 +618,7 @@ Cloud deployment requires region, residency, access, egress, secrets, tenant iso
 
 AI can assist with exercise creation, synthetic evidence generation, hint delivery, rubric-based feedback and report drafting. It must not have unrestricted access to hypervisors, networks or control devices.
 
-\`\`\`mermaid
+```mermaid
 flowchart TD
   AUTHOR["Instructor defines approved scenario"] --> VALIDATE["Scenario schema and safety validator"]
   VALIDATE --> ORCH["Lab orchestration service"]
