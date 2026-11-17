@@ -737,3 +737,209 @@ Before marking Verified:
 ## 18.4 Limitations
 
 This is a foundational learning and planning document. It is not exhaustive, does not replace licensed standards, does not establish legal applicability, and does not authorize active testing. Technical details vary by vendor, model, firmware, process, and site architecture. Operational decisions must be validated by the responsible asset owner, operations, engineering, and safety authorities.
+
+
+---
+
+# 19. Visual learning pack — systems, workflows, and architecture
+
+The diagrams in this section are conceptual learning aids. They do not represent a specific plant, vendor product, or approved engineering design. Validate all real-world flows with current site documentation and responsible engineers.
+
+## 19.1 Industrial system at a glance
+
+This view separates the physical process, control layer, supervisory layer, and business/enterprise services. It also shows that engineering and maintenance are supporting functions rather than the physical process itself.
+
+```mermaid
+flowchart TB
+  subgraph BUSINESS["BUSINESS / ENTERPRISE CONTEXT"]
+    ERP["ERP / business applications"]
+    REPORT["Operations reports / analytics"]
+  end
+  subgraph SUP["SUPERVISORY AND OPERATIONS"]
+    SCADA["SCADA / DCS supervisory services"]
+    HMI["Operator HMI"]
+    HIST["Historian"]
+  end
+  subgraph CONTROL["CONTROL AND ENGINEERING"]
+    PLC["PLC / RTU / controller"]
+    EWS["Engineering workstation"]
+    IO["Remote I/O"]
+  end
+  subgraph FIELD["FIELD AND PHYSICAL PROCESS"]
+    SENSOR["Sensors / transmitters"]
+    ACT["Valves / drives / actuators"]
+    PROCESS["Physical process"]
+  end
+  ERP <--> REPORT
+  REPORT <--> HIST
+  HIST <--> SCADA
+  HMI <--> SCADA
+  SCADA <--> PLC
+  EWS -. "Approved engineering access" .-> PLC
+  PLC <--> IO
+  SENSOR --> IO
+  IO --> ACT
+  ACT --> PROCESS
+  PROCESS --> SENSOR
+```
+
+**How to read it:** field instruments observe the process; controllers execute control logic; supervisory systems provide operator visibility; historians retain process data; enterprise systems consume selected information. Actual architectures may combine or distribute these functions.
+
+## 19.2 Sensor-to-action workflow
+
+```mermaid
+flowchart TD
+  A["Physical condition changes"] --> B["Sensor detects condition"]
+  B --> C["Transmitter / input module"]
+  C --> D["Controller receives input"]
+  D --> E{"Input valid and logic conditions met?"}
+  E -- "Yes" --> F["Controller calculates output"]
+  E -- "No / abnormal" --> G["Configured fault handling / alarm"]
+  F --> H["Output module / drive interface"]
+  H --> I["Final control element acts"]
+  I --> J["Physical process responds"]
+  J --> B
+  D --> K["Status and events to HMI / historian"]
+  G --> K
+  K --> L["Operator reviews and follows procedure"]
+```
+
+**Engineering note:** the decision branch is illustrative. Actual controller logic, fail-state behavior, interlocks, alarm response, and safety functions are process- and vendor-specific. Never infer a safe state from this generic flow.
+
+## 19.3 OT component relationship map
+
+```mermaid
+flowchart LR
+  subgraph FIELD["Field layer"]
+    S["Sensors"]
+    A["Actuators"]
+  end
+  subgraph CONTROL["Control layer"]
+    PLC["PLC"]
+    RTU["RTU"]
+    DCS["DCS controller"]
+    SIS["SIS / safety logic solver"]
+  end
+  subgraph OPERATIONS["Operations layer"]
+    HMI["HMI / operator station"]
+    SCADA["SCADA server"]
+    HIST["Historian"]
+    EWS["Engineering workstation"]
+  end
+  subgraph INTEGRATION["Integration / enterprise"]
+    IDMZ["Industrial DMZ services"]
+    ERP["Enterprise applications"]
+  end
+  S --> PLC
+  S --> RTU
+  S --> DCS
+  PLC --> A
+  RTU --> A
+  DCS --> A
+  SIS -. "Independent safety function as engineered" .-> A
+  PLC <--> HMI
+  RTU <--> SCADA
+  DCS <--> HMI
+  EWS -. "Authorized engineering" .-> PLC
+  SCADA <--> HIST
+  HIST <--> IDMZ
+  IDMZ <--> ERP
+```
+
+**Important:** this map shows typical relationships, not mandatory connectivity. SIS interfaces and independence must be established by the site's functional safety design.
+
+## 19.4 OT lifecycle workflow
+
+```mermaid
+flowchart LR
+  A["Concept and procurement"] --> B["Risk and requirements"]
+  B --> C["Architecture and detailed design"]
+  C --> D["Integration and configuration"]
+  D --> E["FAT"]
+  E --> F["Installation and SAT"]
+  F --> G["Commissioning and handover"]
+  G --> H["Operations and monitoring"]
+  H --> I["Maintenance and change"]
+  I --> H
+  H --> J["Incident / recovery"]
+  J --> H
+  H --> K["Decommissioning"]
+```
+
+Security evidence should be created and retained throughout the lifecycle: requirements, design approvals, configuration baselines, FAT/SAT records, access approvals, change records, monitoring, restore tests, and decommissioning evidence.
+
+## 19.5 OT discovery and assessment workflow
+
+```mermaid
+flowchart TD
+  A["Define purpose and scope"] --> B["Obtain written authorization"]
+  B --> C["Identify asset owner, operations, engineering, safety"]
+  C --> D["Complete site safety and rules of engagement"]
+  D --> E["Review approved diagrams and asset records"]
+  E --> F["Build preliminary inventory"]
+  F --> G["Map zones, conduits, dependencies and remote access"]
+  G --> H["Validate facts with system owners"]
+  H --> I["Record gaps, assumptions and evidence"]
+  I --> J{"Is further testing authorized and safe?"}
+  J -- "No" --> K["Report findings and recommend next steps"]
+  J -- "Yes, with separate approval" --> L["Prepare test-specific plan and change approval"]
+  L --> M["Execute only approved activity"]
+  M --> N["Validate, document and close out"]
+  N --> K
+```
+
+**Stop condition:** if authorization, safety constraints, process state, or operational approval becomes uncertain, stop and contact the designated site authority.
+
+## 19.6 Remote vendor access workflow
+
+```mermaid
+sequenceDiagram
+  participant V as Vendor engineer
+  participant O as Asset owner / approver
+  participant G as Remote access gateway
+  participant J as OT jump host
+  participant E as OT engineer
+  participant T as Target OT asset
+  V->>O: Request access, purpose, target, duration
+  O->>O: Validate business need and approve scope
+  O->>G: Authorize named, time-bounded session
+  V->>G: Authenticate using approved method
+  G->>J: Establish controlled session
+  J->>E: Notify / coordinate session
+  E->>T: Permit only approved activity
+  T-->>J: Session traffic and results
+  J-->>G: Session records / logs
+  G-->>O: Session completion and audit evidence
+  O->>G: Revoke access at end of approved window
+```
+
+This is a governance workflow, not a product-specific configuration. Session recording, MFA, identity federation, and other controls must be assessed for technical feasibility, safety, privacy, and site requirements.
+
+## 19.7 From process to cybersecurity decision
+
+```mermaid
+flowchart TD
+  A["Identify asset"] --> B["Understand its process function"]
+  B --> C["Identify dependencies and communication paths"]
+  C --> D["Describe credible threat or failure"]
+  D --> E["Determine operational and safety consequence"]
+  E --> F["Identify existing safeguards"]
+  F --> G["Identify residual risk and evidence gaps"]
+  G --> H["Assign accountable risk owner"]
+  H --> I["Approve treatment, acceptance, or further analysis"]
+```
+
+A vulnerability score or product alert is only one input. Risk decisions must consider the asset's role, exposure, process consequence, existing safeguards, and recovery capability.
+
+## 19.8 Diagram review checklist
+
+- [ ] Diagram title, purpose, owner, version, and classification are recorded.
+- [ ] It is marked conceptual or site-specific.
+- [ ] Asset names and boundaries match the evidence.
+- [ ] Data-flow direction is shown where relevant.
+- [ ] Trust boundaries, zones, and conduits are labeled.
+- [ ] Safety-related systems are not casually merged into ordinary control zones.
+- [ ] Remote access and third-party dependencies are visible.
+- [ ] Unverified or assumed paths are clearly marked.
+- [ ] Diagram has been reviewed by operations and control engineering.
+- [ ] Sensitive architecture details are stored and shared appropriately.
