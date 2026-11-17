@@ -53,7 +53,7 @@ This playbook establishes a consistent method to:
 
 # 3. Research lifecycle
 
-\`\`\`mermaid
+```mermaid
 flowchart TD
   A["Define question and decision need"] --> B["Discover primary and secondary sources"]
   B --> C["Capture source metadata and exact claims"]
@@ -64,7 +64,7 @@ flowchart TD
   G --> H["Peer review and confidence assessment"]
   H --> I["Publish with citations and caveats"]
   I --> J["Track actions, corrections and review date"]
-\`\`\`
+```
 
 ## 3.1 Define the research question
 
@@ -450,7 +450,7 @@ Official resource: https://attack.mitre.org/matrices/ics/
 
 A research finding becomes useful when it leads to a justified defensive decision.
 
-\`\`\`mermaid
+```mermaid
 flowchart LR
   INTEL["Research or incident evidence"] --> CLAIM["Verified claim and confidence"]
   CLAIM --> SCENARIO["Threat or failure scenario"]
@@ -533,7 +533,7 @@ Controls:
 
 ## 17.1 AI research workflow
 
-\`\`\`mermaid
+```mermaid
 flowchart TD
   Q["Analyst research question"] --> SEARCH["Approved source discovery"]
   SEARCH --> FETCH["Retrieve primary documents"]
