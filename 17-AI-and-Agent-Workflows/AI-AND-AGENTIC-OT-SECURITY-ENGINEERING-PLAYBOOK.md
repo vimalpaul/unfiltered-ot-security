@@ -108,7 +108,7 @@ Begin with the process, risk and user problem. Do not begin with a model or vend
 
 A safe architecture separates data collection, retrieval, model inference, agent orchestration and operational systems. The model does not receive direct control-plane access.
 
-\`\`\`mermaid
+```mermaid
 flowchart TB
   subgraph OT["OT environment"]
     ASSET["Asset inventory"]
@@ -237,7 +237,7 @@ RAG can make approved documentation searchable and can provide source excerpts t
 
 ## 5.2 RAG ingestion workflow
 
-\`\`\`mermaid
+```mermaid
 flowchart TD
   SRC["Approved source repository"] --> AUTH["Source and access validation"]
   AUTH --> SCAN["Malware and content inspection"]
@@ -292,7 +292,7 @@ Agents should be specialized, bounded and independently auditable. A multi-agent
 
 ## 6.2 Agent flow
 
-\`\`\`mermaid
+```mermaid
 sequenceDiagram
   participant N as OT NDR / SIEM
   participant I as Intake agent
@@ -524,7 +524,7 @@ An AI governance program should assign accountable owners before deployment.
 
 ## 11.2 AI system lifecycle
 
-\`\`\`mermaid
+```mermaid
 flowchart TD
   A["Business need and intended use"] --> B["AI impact and risk assessment"]
   B --> C["Data and model due diligence"]
