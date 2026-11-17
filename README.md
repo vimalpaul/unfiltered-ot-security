@@ -60,6 +60,7 @@ Oil and gas across upstream, midstream, and downstream; LNG and petrochemicals; 
 | `03-Industrial-Assets-and-Systems` | PLC, RTU, DCS, HMI, SIS, asset lifecycle |
 | `04-Industrial-Protocols-and-Networks` | Protocols, network design, communications |
 | `05-Standards-and-Frameworks` | International standards and control frameworks |
+- [OT Standards, Frameworks and Compliance Engineering](05-Standards-and-Frameworks/OT-STANDARDS-FRAMEWORKS-AND-COMPLIANCE-ENGINEERING.md)
 | `06-Global-Regulatory-Mapping` | Country, regional, and sector requirements |
 | `07-Industry-and-Use-Cases` | Industrial sectors and real-world scenarios |
 | `08-Threat-Intelligence` | Threat actors, campaigns, malware, incidents |
