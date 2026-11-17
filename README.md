@@ -36,6 +36,7 @@ Oil and gas across upstream, midstream, and downstream; LNG and petrochemicals; 
 - [Global OT regulatory and critical infrastructure playbook](06-Global-Regulatory-Mapping/GLOBAL-OT-REGULATORY-AND-CRITICAL-INFRASTRUCTURE-PLAYBOOK.md)
 - [Regulatory control mapping model](06-Global-Regulatory-Mapping/REGULATORY-CONTROL-MAPPING-MODEL.md)
 - [OT assessment methodology](11-Assessment-and-Testing/OT-ASSESSMENT-METHODOLOGY.md)
+- [OT security assessment, audit and testing playbook](11-Assessment-and-Testing/OT-SECURITY-ASSESSMENT-AUDIT-AND-TESTING-PLAYBOOK.md)
 - [OT SOC and detection engineering](12-Monitoring-and-Detection/OT-SOC-AND-DETECTION.md)
 - [OT incident response and recovery](13-Incident-Response-and-Recovery/OT-INCIDENT-RESPONSE.md)
 - [OT risk assessment method](14-Risk-Governance-and-Assurance/OT-RISK-ASSESSMENT-METHOD.md)
