@@ -64,3 +64,14 @@ SOC analysts must not automatically isolate, reboot, block, scan, or modify indu
 ## Metrics
 
 Track asset visibility, critical conduit coverage, telemetry health, detection validation, triage time, false-positive rate, playbook exercise results, unresolved high-risk exposures, and recovery readiness. Metrics should not incentivize unsafe automation or indiscriminate alert volume.
+
+
+---
+
+## Expanded engineering playbook
+
+For the detailed operating model, monitoring architecture, telemetry catalogue, detection lifecycle, industrial use cases, ATT&CK for ICS mapping, threat hunting, triage, response guardrails, SIEM/SOAR integration, KPIs, AI-assisted workflows, labs and templates, see:
+
+- [OT SOC, Industrial Monitoring and Detection Engineering Playbook](OT-SOC-INDUSTRIAL-MONITORING-AND-DETECTION-ENGINEERING-PLAYBOOK.md)
+
+The concise page above remains the quick reference. The expanded playbook is the implementation and operational reference.
