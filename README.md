@@ -16,8 +16,6 @@ Oil and gas across upstream, midstream, and downstream; LNG and petrochemicals; 
 
 ## Start here
 
-- [Reusable security knowledge engineering skill](UNFILTERED-SECURITY-KNOWLEDGE-ENGINEERING-SKILL.md)
-
 - [Project charter](00-Project-Governance/PROJECT-CHARTER.md)
 - [Documentation standard](00-Project-Governance/DOCUMENTATION-STANDARD.md)
 - [Research and verification methodology](00-Project-Governance/RESEARCH-AND-VERIFICATION-METHODOLOGY.md)
