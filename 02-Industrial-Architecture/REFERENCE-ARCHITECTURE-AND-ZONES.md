@@ -290,6 +290,8 @@ Identify asset owner, system owner, operations and shift responsibility, control
 
 **Deliverable:** scope statement, exclusions, responsibility matrix, and escalation contacts.
 
+The canonical inventory data model, evidence confidence rules, dependency register and criticality workflow are maintained in the [OT Asset Inventory, Dependency Mapping and Criticality Engineering Playbook](../03-Industrial-Assets-and-Systems/OT-ASSET-INVENTORY-AND-CRITICALITY.md). Use the stable Asset_ID and linked interface/relationship records from that playbook when constructing zones, conduits and communication-flow records.
+
 ## 4.4 Step 3 — Build and validate the asset inventory
 
 Record asset identifier, function and process area, manufacturer/model/version where verified, addressing details where approved, physical and logical location, zone and owner, criticality and safety relevance, dependencies and communication peers, support status, evidence source, and confidence.
