@@ -2,10 +2,10 @@
 title: "OT Standards, Frameworks and Compliance Engineering"
 document_id: "UOTS-05-STANDARDS"
 status: "Research baseline — jurisdictional and licensed-standard validation required"
-version: "1.0"
+version: "1.1"
 owner: "Unfiltered OT Security"
 created: "2026-11-17"
-last_reviewed: "2026-11-17"
+last_reviewed: "2026-11-27"
 review_due: "2027-02-17"
 scope: "International OT/IACS standards, cybersecurity frameworks, regulatory applicability, control mapping, audit evidence and implementation"
 classification: "Public"
@@ -14,7 +14,7 @@ classification: "Public"
 # OT Standards, Frameworks and Compliance Engineering
 ## International standards, national requirements, sector obligations and evidence-based assurance
 
-**Document ID:** UOTS-05-STANDARDS | **Version:** 1.0 | **Status:** Research baseline — jurisdictional and licensed-standard validation required
+**Document ID:** UOTS-05-STANDARDS | **Version:** 1.1 | **Status:** Research baseline — jurisdictional and licensed-standard validation required
 
 **Audience:** OT cybersecurity leaders, CISOs, CIOs, compliance officers, OT engineers, auditors, risk owners, regulators, system integrators, managed service providers, and critical infrastructure operators.
 
@@ -947,6 +947,58 @@ The following jurisdictions require further primary-source research before any c
 
 ---
 
+## 20.3 Standards edition and publication watch — verified 2026-11-27
+
+This section records selected edition and lifecycle facts checked against publisher or issuing-body catalogues on 27 November 2026. It is a dated research snapshot, not a substitute for checking the catalogue before procurement, audit or design approval.
+
+| Reference | Publisher-confirmed publication information | Treatment in this repository |
+|---|---|---|
+| ISA/IEC 62443 series | ISA's current series page lists ANSI/ISA-62443-2-1-2024 and ISA-TR62443-2-2-2025, as well as other parts with different publication dates. | Do not assign one common year to the series. Verify each part and its IEC/ISA designation independently. |
+| IEC 62443-3-2 | IEC 62443-3-2:2020, Edition 1.0, addresses the system under consideration, zones and conduits, risk assessment and target security levels. | Use the 2020 publication identifier when referring to this part; confirm current catalogue lifecycle before a project. |
+| IEC 62443-3-3 | IEC 62443-3-3:2013, with its listed 2014 corrigendum, is shown by IEC as a published edition. | Do not infer a new edition from later 62443 publications. Check current IEC lifecycle and applicable corrigenda. |
+| IEC 62443-4-1 | IEC 62443-4-1:2018 is listed as Edition 1.0; IEC's catalogue also identifies Edition 2.0 as under development. | Treat 2018 as the published edition identified in the catalogue snapshot; monitor development and do not cite a forecast as a published standard. |
+| IEC 61508 | IEC Webstore records IEC 61508-1:2010, Edition 2.0, and also exposes pre-release Edition 3.0 material in 2026. | Do not call the 2026 pre-release version a final published replacement. Verify part-by-part publication state because the series is multipart and lifecycle states can differ. |
+| IEC 61511-1 | IEC 61511-1:2016+A1:2017 consolidated version, Edition 2.1, is listed for process-industry safety instrumented systems. | Identify the consolidated edition and amendment explicitly. Check the other parts and current IEC catalogue separately. |
+| ISO/IEC 27001 | ISO/IEC 27001:2022 is Edition 3 and has Amendment 1:2024, titled Climate action changes. | Refer to ISO/IEC 27001:2022 including applicable amendment(s); do not omit the 2024 amendment from controlled registers. |
+| ISO/IEC 27002 | ISO/IEC 27002:2022 is Edition 3 and is published as control guidance. | Treat it as guidance for controls, not as a separately certifiable management-system requirements standard. |
+| ISO/IEC 42001 | ISO/IEC 42001:2023 is a published AI management system standard. | Include it when an organization governs development, provision or use of AI systems; do not treat it as an OT cybersecurity control catalogue. |
+| NIST SP 800-82 | Rev. 3 remains the final publication identified in the NIST catalogue snapshot; Rev. 4 Initial Public Draft was published 21 September 2026, with comments due 30 November 2026. | Use Rev. 3 as the final published reference until NIST publishes a final Rev. 4. Track the draft separately and label it draft. |
+
+### 20.3.1 Functional safety and cybersecurity boundary
+
+IEC 61508 and IEC 61511 are functional-safety standards, not cybersecurity standards. IEC 61511-1 is the process-industry sector implementation of IEC 61508. Cybersecurity work affecting SIS, SIF, safety lifecycle activities, safety requirements or safety validation must be coordinated with functional-safety engineering and the site's management of change process.
+
+Do not use a cybersecurity risk assessment as a substitute for a process hazard analysis, safety lifecycle assessment, SIL determination, proof test or functional-safety assessment. Equally, do not assume that a safety integrity level is a cybersecurity security level. They address different properties and use different methods.
+
+IEC's IEC 61508-1:2010 catalogue page identifies a 2026 Edition 3 pre-release publication and separately records the 2010 Edition 2 as valid in the displayed lifecycle table. Confirm the status of each part before selecting a contractual or design baseline.
+
+### 20.3.2 NIST SP 800-82 Rev. 4 draft handling
+
+NIST published SP 800-82 Rev. 4 Initial Public Draft on 21 September 2026 and set 30 November 2026 as the comment deadline. NIST describes proposed updates including broader OT sector coverage, restructuring around CSF 2.0, expanded asset management and monitoring guidance, and architecture guidance for system-management functions and zero-trust principles.
+
+These are draft contents. They may change before final publication. Do not update the repository's normative baseline to Rev. 4 until NIST issues a final publication. A practitioner may review the draft for awareness and submit comments through NIST's process.
+
+### 20.3.3 Copyright and AI handling for standards material
+
+Publisher metadata and publicly available catalogue descriptions may be used to identify a standard and link readers to the publisher. Do not copy, upload, extract or prompt an AI system with licensed ISA/IEC, IEC or ISO standards text unless the relevant publisher's licence and written permissions expressly allow that use. ISA's series page explicitly warns against entering ISA intellectual property into AI tools and against creating derivatives from ISA intellectual property without permission.
+
+Use original summaries, standard identifiers, short necessary references and links to authorized publisher sources. This repository does not reproduce normative standards text.
+
+### 20.3.4 Official publication sources
+
+- ISA/IEC 62443 catalogue: https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards
+- IEC 62443-3-2:2020: https://webstore.iec.ch/en/publication/30727
+- IEC 62443-3-3:2013: https://webstore.iec.ch/en/publication/7033
+- IEC 62443-4-1:2018: https://webstore.iec.ch/en/publication/33615
+- IEC 61508-1:2010: https://webstore.iec.ch/en/publication/5515
+- IEC 61508-1 Edition 3 pre-release: https://webstore.iec.ch/en/publication/117296
+- IEC 61511-1:2016+A1:2017: https://webstore.iec.ch/en/publication/61289
+- ISO/IEC 27001:2022: https://www.iso.org/standard/27001
+- ISO/IEC 27001:2022/Amd 1:2024: https://www.iso.org/standard/88435.html
+- ISO/IEC 27002:2022: https://www.iso.org/standard/75652.html
+- ISO/IEC 42001:2023: https://www.iso.org/standard/42001
+- NIST SP 800-82 Rev. 4 Initial Public Draft: https://csrc.nist.gov/pubs/sp/800/82/r4/ipd
+
 # 21. Document control
 
 ## 21.1 Revision history
@@ -954,6 +1006,7 @@ The following jurisdictions require further primary-source research before any c
 | Version | Date | Change | Status |
 |---|---|---|---|
 | 1.0 | 2026-11-17 | Initial international standards and compliance engineering guide; primary-source baseline; Saudi OTCC research; regional applicability register; audit and AI workflows | Research baseline |
+| 1.1 | 2026-11-27 | Added publisher-verified standards edition watch for ISA/IEC 62443, IEC 61508/61511, ISO/IEC 27001/27002/42001 and NIST SP 800-82 Rev. 4 draft; clarified functional-safety boundary and standards copyright/AI handling | Research baseline; dated metadata verification |
 
 ## 21.2 Required specialist review
 
