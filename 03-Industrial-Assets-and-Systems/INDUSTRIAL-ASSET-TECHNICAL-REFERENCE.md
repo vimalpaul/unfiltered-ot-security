@@ -875,6 +875,8 @@ Do not claim exploitability, safety impact, or process disruption without suppor
 
 ---
 
+For the full inventory schema, relational data model, evidence confidence, dependency mapping, lifecycle governance and criticality approval workflow, use the companion [OT Asset Inventory, Dependency Mapping and Criticality Engineering Playbook](OT-ASSET-INVENTORY-AND-CRITICALITY.md). This technical reference explains asset families; the companion playbook governs how those assets are recorded and prioritized.
+
 # 15. Criticality and consequence-based classification
 
 ## 15.1 Why asset criticality matters
