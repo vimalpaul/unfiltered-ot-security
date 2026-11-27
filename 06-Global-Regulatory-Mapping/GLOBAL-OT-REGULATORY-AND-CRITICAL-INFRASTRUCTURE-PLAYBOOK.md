@@ -237,7 +237,7 @@ Do not claim a customer security standard applies to all Saudi operators. It may
 
 ### National critical information infrastructure policy
 
-The UAE government portal describes a **Critical Information Infrastructure Protection (CIIP) Policy** established by the UAE Cyber Security Council. The policy defines a governance and protection framework for CII entities, including identification of critical assets, national risk profiles, baseline security requirements, assurance and enforcement mechanisms across vital sectors.
+The UAE government portal describes a **Critical Information Infrastructure Protection (CIIP) Policy** established by the UAE Cyber Security Council. The portal page was updated on 2 July 2026 and describes a national governance and protection framework for CII entities, including identification of critical assets, national risk profiles, baseline security requirements, and assurance and enforcement mechanisms across vital sectors. Treat this as a national CII policy source; it does not by itself prove that every OT operator is designated or that the policy is a detailed OT technical control standard.
 
 Official UAE government source, updated 2 July 2026: https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/cyber-activities/Critical-Information-Infrastructure-Protection-Policy
 
@@ -326,13 +326,22 @@ The NCSC publishes Baseline Cyber Security Controls. The official page describes
 6. OT and IoT cybersecurity.
 7. Audit.
 
-The official controls page states that the document is an essential control baseline. The published baseline document states mandatory applicability for private and public entities that are part of Bahrain's CNI, while encouraging other entities to follow it.
+The NCSC describes the Baseline Cyber Security Controls as an essential set of controls for entities in Bahrain. The official baseline document states that it targets private and public entities in the Kingdom's CNI and that following it is mandatory for entities that are part of the CNI; other entities are encouraged to follow it. Do not generalize this mandatory statement to every organization without confirming CNI designation and entity scope.
 
-Official page: https://ncsc.gov.bh/en/standards-controls/baseline-cyber-security-controls.html
+The official NCSC page identifies seven domains, including Domain 6 for OT and IoT. The published PDF's Domain 6 includes controls addressing:
+- Separation of OT/IoT networks from other networks through segmentation.
+- Monitoring OT/IoT networks and activating, collecting and analyzing event logs.
+- Changing default passwords on OT/IoT devices.
+- Risk-based testing and implementation of security updates and patches.
+
+These are examples from the published baseline, not a substitute for the full controlled document or the entity's applicable CNI sector controls. Operationally, patching and segmentation changes must still follow site safety, change management, OEM and availability constraints.
+
+Official NCSC page: https://ncsc.gov.bh/en/standards-controls/baseline-cyber-security-controls
+Official baseline PDF: https://www.ncsc.gov.bh/assets/static_images/policies/baseline-cybersecurity-controls-v1.pdf
 
 ### CNI Cybersecurity Controls
 
-The NCSC identifies CNI sectors including Gas, Electricity & Oil (GEO), Financial Services, ICT, Healthcare Services, Government Services, Critical Industry and Transportation. It publishes sector control resources including Oil, Electricity and Gas and Critical Industry controls.
+The NCSC identifies CNI sectors including Gas, Electricity & Oil (GEO), Financial Services, ICT, Healthcare Services, Government Services, Critical Industry and Transportation. It states that it has developed additional detailed cybersecurity standards for CNI sectors, including Oil, Electricity and Gas and Critical Industry controls. A baseline control set and a sector-specific control set should be assessed together where applicable.
 
 Official source: https://www.ncsc.gov.bh/en/standards-controls/CNI-cybersecurity-controls
 
@@ -1073,6 +1082,7 @@ The following official sources support the jurisdiction-specific statements in t
 | Version | Date | Change | Status |
 |---|---|---|---|
 | 1.0 | 2026-11-17 | Global regulatory playbook, GCC primary-source baseline, India power-sector regulation, Singapore, Australia, EU/UK, sector mapping, reporting and AI workflows | Research baseline |
+| 1.1 | 2026-11-27 | Refreshed Bahrain baseline and CNI source references, summarized official OT/IoT domain topics, clarified UAE CIIP policy update and federal/Dubai scope distinction | Research baseline; applicability review pending |
 
 ## 20.2 Specialist review required
 
