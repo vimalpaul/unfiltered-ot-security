@@ -1,3 +1,16 @@
+---
+title: "IEC 62443 Series: Practical Implementation Guide"
+document_id: "UOTS-05-IEC62443-GUIDE"
+status: "Research baseline — verify licensed edition and applicability before use"
+version: "1.1"
+owner: "Unfiltered OT Security"
+created: "2026-11-17"
+last_reviewed: "2026-11-27"
+review_due: "2027-02-27"
+scope: "ISA/IEC 62443 series orientation and implementation workflow"
+classification: "Public"
+---
+
 # IEC 62443 Series: Practical Implementation Guide
 
 ## Purpose
@@ -17,15 +30,15 @@ Security is a shared responsibility. Contractual and operational boundaries must
 | Part | Main subject | Typical project use |
 |---|---|---|
 | IEC 62443-1-1 | Terminology, concepts, and models | Establish common vocabulary and foundational models |
-| IEC 62443-2-1 | Asset owner IACS security program requirements | Establish and maintain an OT security program |
-| IEC 62443-2-3 | Patch management in the IACS environment | Govern patch evaluation, testing, and deployment |
+| IEC 62443-2-1 | Asset owner IACS security program requirements; ANSI/ISA-62443-2-1-2024 is listed by ISA | Establish and maintain an OT security program |
+| IEC 62443-2-2 | IACS security protection scheme technical report; ISA-TR62443-2-2-2025 is listed by ISA | Understand and organize the protection scheme across IACS operations |\n| IEC 62443-2-3 | Patch management in the IACS environment | Govern patch evaluation, testing, and deployment |
 | IEC 62443-2-4 | Security program requirements for IACS service providers | Specify and assess integrator and maintenance provider practices |
 | IEC 62443-3-2 | Security risk assessment for system design | Define system under consideration, zones, conduits, risk, and target security levels |
 | IEC 62443-3-3 | System security requirements and security levels | Define system-level technical requirements |
 | IEC 62443-4-1 | Secure product development lifecycle requirements | Assess supplier secure development lifecycle |
 | IEC 62443-4-2 | Technical security requirements for IACS components | Evaluate component security capabilities |
 
-The exact current edition and publication status must be verified against the IEC or ISA catalogue before citing a requirement.
+The series is not published as one synchronized edition. The ISA catalogue currently lists ANSI/ISA-62443-2-1-2024 and ISA-TR62443-2-2-2025 alongside earlier publications for other parts. The IEC and ISA identifiers and publication states must be checked part by part. A technical report is not automatically a normative requirements standard. The exact current edition, corrigenda, amendments, national adoption and publication status must be verified against the IEC or ISA catalogue before citing a requirement.
 
 ## A practical implementation sequence
 
@@ -53,6 +66,20 @@ A project crosswalk should retain the source clause identifier and edition, desc
 ## Edition and status verification
 
 ISA's published series page lists, among other entries, ANSI/ISA-62443-2-1-2024, ANSI/ISA-62443-3-2-2020, ISA-62443-3-3-2013, ANSI/ISA-62443-2-4-2018 / IEC 62443-2-4:2015+AMD1:2017, ANSI/ISA-62443-4-1-2018, and ANSI/ISA-62443-4-2-2018. ISA and IEC editions, publication status, and national adoption can differ. Check the official catalogue at the time of use.
+
+## Supplier and product lifecycle boundary
+
+IEC 62443-4-1 addresses secure product development lifecycle processes for product developers and maintainers. It is not a generic operator or integrator certification checklist. Asset owners and integrators should translate product security expectations into procurement, acceptance, vulnerability disclosure, patch support, end-of-life and contractual requirements, while assessing the supplier's evidence within the actual product and service scope.
+
+IEC 62443-4-2 addresses technical security requirements for IACS components. Component capability evidence does not, by itself, demonstrate that the deployed system or site is securely architected, configured, integrated or operated.
+
+## Copyright and AI handling
+
+ISA's 62443 series page contains an explicit warning against entering ISA intellectual property into AI tools or creating derivatives from ISA intellectual property without permission. Do not upload licensed ISA/IEC standards text or use it to prompt an AI system unless the applicable licence and written permissions expressly permit that use. This guide uses bibliographic metadata and original explanatory summaries only.
+
+## Review note — 2026-11-27
+
+The edition references above were checked against the ISA series catalogue on this date. Recheck the publisher catalogue before procurement, contractual specification, assessment or audit. The catalogue is dynamic and this page is an orientation aid, not an edition register.
 
 ## Sources
 
