@@ -12,6 +12,14 @@ This register lists authoritative starting points. It is not an exhaustive bibli
 | CISA ICS Recommended Practices | CISA | Defensive guidance | https://www.cisa.gov/resources-tools/resources/ics-recommended-practices |
 | Saudi NCA OTCC | National Cybersecurity Authority, Saudi Arabia | OT cybersecurity controls | https://nca.gov.sa/en/regulatory-documents/controls-list/otcc/ |
 | Saudi NCA OTCC implementation guide | National Cybersecurity Authority, Saudi Arabia | OTCC implementation guidance | https://nca.gov.sa/en/regulatory-documents/guidelines-list/igcc/ |
+| UAE Critical Information Infrastructure Protection Policy | UAE Cyber Security Council / UAE Government | National CII governance and protection policy; government page updated 2026-07-02 | https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/cyber-activities/Critical-Information-Infrastructure-Protection-Policy |
+| Dubai DESC ICS Standard | Dubai Electronic Security Center | ICS/OT standard; DESC states its scope includes Dubai government and semi-government entities operating critical infrastructure and/or OT | https://www.desc.gov.ae/regulations/standards-policies/ |
+| Qatar National ICS Security Standard v3.1 | Q-CERT / Qatar NCSA hosted publication | Officially hosted ICS baseline; current status and formal entity applicability require confirmation | https://qcert.ncsa.gov.qa/sites/default/files/public/documents/cs_national_ics_security_standard_en_v3.1_0.pdf |
+| Bahrain Baseline Cyber Security Controls | National Cyber Security Center, Bahrain | Seven-domain baseline; includes OT/IoT Domain 6; published baseline states mandatory applicability for CNI entities | https://ncsc.gov.bh/en/standards-controls/baseline-cyber-security-controls |
+| Bahrain Baseline Cyber Security Controls PDF | National Cyber Security Center, Bahrain | Primary document for control-level verification, including OT/IoT network segmentation, monitoring, default passwords and patching | https://www.ncsc.gov.bh/assets/static_images/policies/baseline-cybersecurity-controls-v1.pdf |
+| Bahrain CNI Cybersecurity Controls | National Cyber Security Center, Bahrain | CNI sector designations and sector-specific cybersecurity control resources | https://www.ncsc.gov.bh/en/standards-controls/CNI-cybersecurity-controls |
+| Bahrain National Cyber Security Strategy 2025–2028 | National Cyber Security Center, Bahrain | National strategy context; not a substitute for binding controls | https://ncsc.gov.bh/en/national-strategy/bahrain-national-cyber-security-strategy-2025-2028.html |
+
 | OWASP OT Top 10 | OWASP | OT risk awareness and mappings | https://ot.owasp.org/ |
 | IEC catalogue | IEC | International electrotechnical standards | https://www.iec.ch/ |
 | ISO standards catalogue | ISO | International standards | https://www.iso.org/standards.html |
@@ -51,3 +59,14 @@ Last research refresh: 2026-11-17.
 - ISA's 62443 catalogue page warns against entering ISA intellectual property into AI tools or creating derivatives from ISA IP without permission. Do not upload licensed standards text into AI systems unless the applicable licence and written permissions expressly allow it.
 
 These are metadata observations checked on 2026-11-27. They are not a substitute for checking the publisher's current lifecycle status before use.
+
+## GCC regulatory source refresh — 2026-11-27
+
+- UAE Government portal page for the CIIP Policy was updated 2 July 2026. Treat the policy as national CII governance context; do not infer that every OT operator is designated or that it is a detailed OT technical standard.
+- DESC's official standards page states that the DESC ICS Standard applies to Dubai government and semi-government entities operating critical infrastructure and/or OT. This scope statement must not be generalized to all UAE emirates or private entities.
+- Bahrain NCSC's official Baseline Cyber Security Controls page describes seven domains, including OT and IoT. The published baseline PDF states mandatory applicability for public and private entities that are part of Bahrain's CNI and encourages other entities to follow it. Confirm designation and current controlled version for each organization.
+- Bahrain NCSC's published Domain 6 material includes OT/IoT segmentation, network monitoring and event logging, default-password changes, and risk-based patch testing and implementation. Apply OT change management, safety and availability constraints when translating these into site procedures.
+- Bahrain NCSC's CNI page identifies sector groups and links additional sector-specific controls. Review applicable baseline and sector controls together.
+- Q-CERT hosts the National ICS Security Standard v3.1. The current effective version, adoption instrument, scope and assessment process remain to be confirmed with the competent authority.
+
+These statements are based on official authority or government pages checked on 2026-11-27. They are not a legal opinion or a determination of any specific operator's scope.
