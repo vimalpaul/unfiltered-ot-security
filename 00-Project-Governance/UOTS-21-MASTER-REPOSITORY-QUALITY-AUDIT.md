@@ -283,6 +283,48 @@ The next work should proceed in this order:
 6. Inspect CI workflow execution and perform repository-wide Markdown, link and Mermaid validation.
 7. Assign chapter scores only after the relevant evidence has been collected.
 
+## 13. GCC regulatory source validation — first pass (2026-11-27)
+
+### 13.1 Official-source checks completed
+
+| Jurisdiction | Official source evidence | Safe statement | Open validation |
+|---|---|---|---|
+| Saudi Arabia | NCA's OTCC page identifies OTCC-1:2022, published 2 June 2022, as OT minimum cybersecurity requirements and an extension to ECC | An OT-specific national control publication exists | Confirm entity/facility applicability, control level, current methodology and assessment tool |
+| UAE federal | UAE Government CIIP Policy page, updated 2 July 2026 | National CII governance and protection policy exists | Review full policy, CII designation, implementing instruments and entity-specific obligations |
+| Dubai | DESC standards page identifies a DESC ICS Standard and states its scope includes Dubai government and semi-government entities operating critical infrastructure and/or OT | A Dubai-specific ICS/OT standard and scope statement exist | Obtain controlled standard, clause identifiers, current edition and exact entity applicability |
+| Qatar | Q-CERT hosts the National ICS Security Standard v3.1 | An official-hosted ICS baseline document is identifiable | Current effective version, formal adoption, covered entities and assessment process remain unconfirmed |
+| Bahrain | NCSC Baseline Cyber Security Controls page and PDF; CNI controls page | Baseline includes OT/IoT Domain 6; published PDF states mandatory application to public/private entities that are part of CNI; NCSC lists sector-specific CNI control resources | Confirm current controlled version, CNI designation, entity scope, sector-specific requirements and assessment mechanism |
+| Kuwait | CITRA-hosted national cybersecurity strategy | Strategy is a research lead and national policy context | Current binding instruments, competent authority and OT-specific mandatory requirements remain unverified |
+| Oman | No definitive current universally applicable OT control catalogue established in this pass | No positive claim is made | Continue primary-source research; do not invent a control set |
+
+### 13.2 Material regulatory findings
+
+| ID | Priority | Finding | Disposition |
+|---|---|---|---|
+| F-18 | High | The GCC register omitted Qatar's official-hosted National ICS Security Standard v3.1 as a distinct entry | Added the source with explicit current-status and applicability caveats |
+| F-19 | High | Bahrain's baseline OT/IoT domain and CNI applicability were not sufficiently detailed in the compact register | Added NCSC baseline and PDF sources, the CNI sector source, and high-level Domain 6 topics |
+| F-20 | High | The UAE national CIIP Policy and Dubai DESC ICS Standard could be conflated | Clarified national CII policy versus Dubai-specific ICS/OT standard and prohibited UAE-wide generalization |
+| F-21 | Medium | GCC source register needed a dated primary-source refresh and additional official URLs | Added UAE, Dubai, Qatar and Bahrain primary sources with a 2026-11-27 review note |
+
+### 13.3 Changes committed
+
+- Updated `06-Global-Regulatory-Mapping/MIDDLE-EAST-AND-GCC-REGULATORY-REGISTER.md` with Qatar National ICS Standard v3.1, Bahrain NCSC baseline/CNI controls, and UAE CIIP Policy.
+- Updated `06-Global-Regulatory-Mapping/GLOBAL-OT-REGULATORY-AND-CRITICAL-INFRASTRUCTURE-PLAYBOOK.md` with more precise Bahrain Domain 6 context, official source links, and UAE federal/Dubai scope distinctions.
+- Expanded `references/SOURCE-REGISTER.md` with official GCC authority and government sources.
+
+### 13.4 Primary sources consulted
+
+- Saudi NCA OTCC: https://nca.gov.sa/en/regulatory-documents/controls-list/otcc/
+- UAE Government CIIP Policy: https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/cyber-activities/Critical-Information-Infrastructure-Protection-Policy
+- Dubai DESC Standards and Policies: https://www.desc.gov.ae/regulations/standards-policies/
+- Qatar National ICS Security Standard v3.1: https://qcert.ncsa.gov.qa/sites/default/files/public/documents/cs_national_ics_security_standard_en_v3.1_0.pdf
+- Bahrain NCSC Baseline Cyber Security Controls: https://ncsc.gov.bh/en/standards-controls/baseline-cyber-security-controls
+- Bahrain Baseline Controls PDF: https://www.ncsc.gov.bh/assets/static_images/policies/baseline-cybersecurity-controls-v1.pdf
+- Bahrain NCSC CNI Cybersecurity Controls: https://www.ncsc.gov.bh/en/standards-controls/CNI-cybersecurity-controls
+- Bahrain National Cyber Security Strategy 2025–2028: https://ncsc.gov.bh/en/national-strategy/bahrain-national-cyber-security-strategy-2025-2028.html
+
+**Status:** First-pass source verification only. No complete legal applicability opinion or control-by-control compliance crosswalk has been performed.
+
 ## 12. Standards and framework validation — first pass (2026-11-27)
 
 ### 12.1 Official-source checks completed
