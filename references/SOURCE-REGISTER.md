@@ -87,7 +87,22 @@ These are metadata observations checked on 2026-11-27. They are not a substitute
 
 These statements are based on official authority or government pages checked on 2026-11-27. They are not a legal opinion or a determination of any specific operator's scope.
 
-## Industry engineering source refresh — 2026-11-27
+
+| CISA Critical Manufacturing Sector Cybersecurity Framework Implementation Guidance | CISA | US critical manufacturing sector guidance and manufacturing-oriented risk management resources | https://www.cisa.gov/sites/default/files/publications/Critical_Manufacturing_Sector_Cybersecurity_Framework_Implementation_Guidance_FINAL_508.pdf |
+| NISTIR 8183 Manufacturing Profile | NIST | Cybersecurity Framework profile for manufacturing organizations | https://csrc.nist.gov/pubs/ir/8183/final |
+| NIST SP 1800-41 Initial Public Draft | NIST NCCoE | Manufacturing incident response and recovery practice guide; draft published 21 May 2026, comment period closed 8 July 2026 | https://csrc.nist.gov/pubs/sp/1800/41/ipd |
+| MSHA PPL P25-V-01 | Mine Safety and Health Administration | US underground coal mine emergency response plan guidance; effective 28 August 2025, stated expiry 31 March 2027 | https://www.msha.gov/sites/default/files/Directive%20%26%20Guidance/PPLs/P25-V-01%20Implementation%20of%20Section%202%20of%20the%20MINER%20Act%20PPL.pdf |
+| US Mine Improvement and New Emergency Response Act | US Congress / MSHA | Statutory background for specified underground coal mine emergency response, communications and tracking requirements | https://arlweb.msha.gov/MinerAct/2006mineract.pdf |
+| IMO Maritime Cyber Risk Management | International Maritime Organization | Maritime cyber risk guidance and relationship to safety management systems | https://www.imo.org/en/ourwork/security/pages/cyber-security.aspx |
+| OCIMF Guidelines on Cyber Security onboard Ships, 5th edition | OCIMF and industry organizations | Shipboard cyber risk management guidance, 14 November 2024 | https://www.ocimf.org/publications/information-papers/the-guidelines-on-cybersecurity-onboard-ships |
+| ENISA Transport sector | ENISA | NIS2 and EU transport sector cybersecurity context | https://www.enisa.europa.eu/topics/cybersecurity-of-critical-sectors/transport |
+| ENISA Cybersecurity of Critical Sectors | ENISA | NIS2 sector coverage including manufacturing, transport, water, energy and digital infrastructure | https://www.enisa.europa.eu/topics/cybersecurity-of-critical-sectors |
+| US FTA Cybersecurity Resources for Transit Agencies | Federal Transit Administration | Transit cybersecurity resources and TSA directive references | https://www.transit.dot.gov/regulations-and-programs/safety/cybersecurity-resources-transit-agencies |
+| TSA Security Directive 1582-21-01C | Transportation Security Administration | Historical passenger railroad directive version; published document states expiry 24 October 2025; verify current renewal before use | https://www.tsa.gov/sites/default/files/security_directive_1582-21-01c_and_memo_508c.pdf |
+| BACnet Secure Connect | BACnet International / ASHRAE BACnet Committee | Encrypted BACnet communication datalink option; not a substitute for full system security | https://bacnetinternational.org/bacnetsc/ |
+| BACnet Institute cybersecurity resources | BACnet International | Building automation cybersecurity learning resources including BACnet/SC | https://bacnetinternational.org/tbi/ |
+| Uptime Institute data centre cybersecurity briefing | Uptime Institute | Data centre cyber risk context including power and cooling facility OT | https://intelligence.uptimeinstitute.com/resource/scoping-data-center-cybersecurity |
+
 
 - The FBI/EPA 30 July 2026 PSA documents water-sector incidents involving internet-facing PLCs, reported operational effects including loss of pressure and flooding, and the importance of local/manual fallback.
 - EPA's revised August 2024 water/wastewater cybersecurity guidance provides recommendations on asset inventory, remote access MFA, segmentation, configuration records, incident response and backup practices. These are US agency recommendations and must not be represented as universal law.
@@ -96,4 +111,24 @@ These statements are based on official authority or government pages checked on 
 - NERC's CIP catalogue distinguishes currently mandatory/enforceable standards from standards subject to future enforcement. CIP-003-10 is listed for future enforcement on 1 July 2028; do not present it as already enforceable.
 - NERC announced FERC approval of CIP-014-4 on 10 September 2026. Verify its effective date and implementation plan before assigning an obligation.
 - TSA Pipeline-2021-01E is a historical 2025 version with a stated expiry of 2 May 2026. Do not present that version as current without verifying a subsequent directive or renewal.
+
+
+
+- The FBI/EPA 30 July 2026 PSA documents water-sector incidents involving internet-facing PLCs, reported operational effects including loss of pressure and flooding, and the importance of local/manual fallback.
+- EPA's revised August 2024 water/wastewater cybersecurity guidance provides recommendations on asset inventory, remote access MFA, segmentation, configuration records, incident response and backup practices. These are US agency recommendations and must not be represented as universal law.
+- CISA-led multi-agency asset inventory guidance includes a water/wastewater taxonomy with collection, treatment, distribution, reuse, enterprise data management, wastewater treatment and communications areas.
+- NIST's 1 October 2026 water-sector OT security article discusses NIST NCCoE's water/wastewater project and SP 1800-45 secure remote access build architecture.
+- NERC's CIP catalogue distinguishes currently mandatory/enforceable standards from standards subject to future enforcement. CIP-003-10 is listed for future enforcement on 1 July 2028; do not present it as already enforceable.
+- NERC announced FERC approval of CIP-014-4 on 10 September 2026. Verify its effective date and implementation plan before assigning an obligation.
+- TSA Pipeline-2021-01E is a historical 2025 version with a stated expiry of 2 May 2026. Do not present that version as current without verifying a subsequent directive or renewal.
+
+
+## Industry handbook refresh — 2026-11-27
+
+- Manufacturing: CISA's Critical Manufacturing Sector Cybersecurity Framework Implementation Guidance and NISTIR 8183 provide sector-oriented references. NIST SP 1800-41 is an Initial Public Draft dated 21 May 2026; its comment period closed 8 July 2026. Do not label it a final publication.
+- Mining: MSHA PPL P25-V-01 is US underground coal mine emergency response guidance with an effective date of 28 August 2025 and stated expiry of 31 March 2027. It is not a global mining cybersecurity standard and does not apply to every mine type.
+- Transport: IMO maritime cyber risk guidance links cyber risk management to existing safety management practices. OCIMF's shipboard cybersecurity guidelines are listed as 5th edition, 2024. TSA passenger rail directive 1582-21-01C is a historical published version with an expiry date of 24 October 2025; verify a current renewal before treating it as binding.
+- Buildings/data centres: NIST SP 800-82 Rev. 3 explicitly includes building automation, transportation and physical access control among OT examples. BACnet/SC is described by BACnet International as an encrypted communication datalink option; it is not proof of end-to-end system security.
+- EU NIS2 sector coverage includes specified transport modes, manufacturing subsectors, data centre service providers and other sectors, but entity scope depends on national transposition, size/criticality and applicable definitions.
+- Source dates and jurisdictional limitations must be preserved when citing these references in sector handbooks.
 
