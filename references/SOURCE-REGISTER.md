@@ -34,6 +34,22 @@ This register lists authoritative starting points. It is not an exhaustive bibli
 | ISO/IEC 27002:2022 | ISO/IEC | Information security control guidance; not separately certifiable | https://www.iso.org/standard/75652.html |
 | ISO/IEC 42001:2023 | ISO/IEC | Artificial intelligence management system requirements | https://www.iso.org/standard/42001 |
 | NIST SP 800-82 Rev. 4 Initial Public Draft | NIST | Draft OT security guidance published 21 September 2026; comments due 30 November 2026 | https://csrc.nist.gov/pubs/sp/800/82/r4/ipd |
+| FBI/EPA water-sector PLC PSA | FBI and EPA | 30 July 2026 warning on internet-facing PLC targeting and water utility operational disruption | https://www.fbi.gov/investigate/cyber/alerts/2026/malicious-cyber-actors-targeting-water-and-wastewater-sector-internet--facing-programmable-logic-controllers-causing-operational-disruptions |
+| EPA water/wastewater cybersecurity guidance | US Environmental Protection Agency | Revised August 2024 recommendations for water utility asset inventory, remote access, segmentation, incident response and backups | https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P101B9KL.txt |
+| Joint OT Asset Inventory Guidance | CISA, EPA, NSA, FBI and international partners | OT inventory methodology and sector taxonomy including water and wastewater | https://www.epa.gov/system/files/documents/2025-09/joint-guide-foundations-for-ot-cybersecurity-asset-inventory-guidance_508c.pdf |
+| NIST water and wastewater OT security insight | NIST | October 2026 discussion of water sector OT security and NIST NCCoE work | https://www.nist.gov/blogs/cybersecurity-insights/securing-water-and-wastewater-operational-technology-environments |
+| EPA Water Sector Cybersecurity Planning | US Environmental Protection Agency | Incident response templates, exercises, asset inventory and assessment resources | https://www.epa.gov/cyberwater/cybersecurity-planning |
+| NERC CIP standards catalogue | North American Electric Reliability Corporation | Current CIP standard status, effective dates and enforcement classification | https://www.nerc.com/standards/reliability-standards/cip |
+| NERC CIP-002-5.1a | NERC | BES Cyber System categorization; listed mandatory and subject to enforcement | https://www.nerc.com/standards/reliability-standards/cip/cip-002-5.1a |
+| NERC CIP-003-10 | NERC | Security management controls; future enforcement date shown as 1 July 2028 | https://www.nerc.com/standards/reliability-standards/cip/cip-003-10 |
+| NERC CIP-007-6 | NERC | System security management; mandatory and subject to enforcement | https://prod.nerc.com/standards/reliability-standards/cip/cip-007-6 |
+| NERC CIP-010-4 | NERC | Configuration change management and vulnerability assessments | https://www.nerc.com/standards/reliability-standards/cip/cip-010-4 |
+| NERC CIP-013-2 | NERC | Supply chain risk management | https://www.nerc.com/standards/reliability-standards/cip/cip-013-2 |
+| NERC CIP-014-4 approval notice | NERC / FERC | FERC approval announcement dated 10 September 2026; verify effective date separately | https://www.nerc.com/newsroom/ferc-approves-reliability-standard-for-physical-security |
+| NERC Critical Infrastructure Protection Roadmap | NERC | January 2026 strategic roadmap and discussion of emerging grid cyber risks | https://www.nerc.com/globalassets/our-work/reports/special-reports/nerc_cip_roadmap_01122026.pdf |
+| DOE CESER oil and natural gas exercises | US Department of Energy | 22 June 2026 sector exercise and response coordination context | https://www.energy.gov/ceser/articles/ceser-supports-oil-and-natural-gas-subsector-critical-energy-security-exercises |
+| TSA Pipeline Security Directive 2021-01E | Transportation Security Administration | Historical directive version; stated expiry 2 May 2026; check current renewal before use | https://www.tsa.gov/sites/default/files/tsa-security-directive-pipeline-2021-01e-and-memo-508c.pdf |
+
 
 
 ## Source handling
@@ -70,3 +86,14 @@ These are metadata observations checked on 2026-11-27. They are not a substitute
 - Q-CERT hosts the National ICS Security Standard v3.1. The current effective version, adoption instrument, scope and assessment process remain to be confirmed with the competent authority.
 
 These statements are based on official authority or government pages checked on 2026-11-27. They are not a legal opinion or a determination of any specific operator's scope.
+
+## Industry engineering source refresh — 2026-11-27
+
+- The FBI/EPA 30 July 2026 PSA documents water-sector incidents involving internet-facing PLCs, reported operational effects including loss of pressure and flooding, and the importance of local/manual fallback.
+- EPA's revised August 2024 water/wastewater cybersecurity guidance provides recommendations on asset inventory, remote access MFA, segmentation, configuration records, incident response and backup practices. These are US agency recommendations and must not be represented as universal law.
+- CISA-led multi-agency asset inventory guidance includes a water/wastewater taxonomy with collection, treatment, distribution, reuse, enterprise data management, wastewater treatment and communications areas.
+- NIST's 1 October 2026 water-sector OT security article discusses NIST NCCoE's water/wastewater project and SP 1800-45 secure remote access build architecture.
+- NERC's CIP catalogue distinguishes currently mandatory/enforceable standards from standards subject to future enforcement. CIP-003-10 is listed for future enforcement on 1 July 2028; do not present it as already enforceable.
+- NERC announced FERC approval of CIP-014-4 on 10 September 2026. Verify its effective date and implementation plan before assigning an obligation.
+- TSA Pipeline-2021-01E is a historical 2025 version with a stated expiry of 2 May 2026. Do not present that version as current without verifying a subsequent directive or renewal.
+
