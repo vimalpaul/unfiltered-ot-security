@@ -424,7 +424,54 @@ The following publisher/issuer pages were checked during this pass:
 
 
 
-## 14. Audit status and change control
+## 14. Industry engineering depth validation — second pass (2026-11-27)
+
+### 14.1 Files inspected and remediated
+
+| File | Previous size | Assessment | Remediation |
+|---|---:|---|---|
+| `07-Industry-and-Use-Cases/MANUFACTURING-AND-FACTORY-OT-SECURITY.md` | 2,323 characters | Orientation only; lacked detailed production-cell architecture, engineering change control, detection and recovery | Expanded to version 1.1 with manufacturing models, asset/dependency inventory, cell architecture, threat/control/detection matrix, safe assessment, production recovery, deliverables and metrics |
+| `07-Industry-and-Use-Cases/MINING-AND-METALS-OT-SECURITY.md` | 1,830 characters | Orientation only; safety-critical mine systems and emergency dependencies were not sufficiently mapped | Expanded to version 1.1 with mine process taxonomy, ventilation/emergency dependencies, fleet/hoist/tailings assets, architecture, detection, safe assessment and emergency response |
+| `07-Industry-and-Use-Cases/TRANSPORT-PORTS-AND-AIRPORT-OT-SECURITY.md` | 1,814 characters | Broad transport scope without mode-specific architecture, safety boundary, response or jurisdictional caveats | Expanded to version 1.1 with rail, aviation, port, maritime, road/tunnel assets, mode-specific threats, monitoring, response and regulatory context |
+| `07-Industry-and-Use-Cases/BUILDING-AUTOMATION-AND-DATA-CENTRE-FACILITIES.md` | 1,745 characters | BMS and data centre facility OT were combined without sufficient dependency and protocol detail | Expanded to version 1.1 with BMS/EPMS/cooling/power asset model, BACnet/SC, data centre dependencies, detections, recovery and life-safety constraints |
+
+### 14.2 Findings
+
+| ID | Priority | Finding | Disposition |
+|---|---|---|---|
+| F-28 | High | Manufacturing guide lacked production-cell and engineering-change depth | Added machine/robot/PLC/MES/quality dependencies, approved baselines, detections and production restart workflow |
+| F-29 | Critical | Mining guide did not sufficiently distinguish cybersecurity containment from mine emergency and safety authority | Added explicit mine safety boundary, emergency system dependencies and requirement to follow approved emergency response plan first |
+| F-30 | High | Transport guide combined rail, aviation, ports, maritime and roads without clear mode-specific safety authority | Added subsector matrix, separate asset classes, threat scenarios and operational decision authority |
+| F-31 | High | Building and data centre facility guide did not adequately model power/cooling dependencies and certified life-safety boundaries | Added EPMS, UPS, generator, ATS, chiller, CRAH/CRAC, CDU and fire/life-safety separation |
+| F-32 | Medium | Sector source register lacked authoritative manufacturing, mining, transport, maritime and building automation references | Added CISA, NIST, MSHA, IMO, OCIMF, ENISA, FTA, TSA, BACnet International and Uptime Institute references |
+| F-33 | High | Time-limited regulatory directives and draft publications could be mistaken for current binding requirements | Marked NIST SP 1800-41 as a draft, MSHA PPL P25-V-01 with stated expiry, and TSA 1582-21-01C as historical with stated expiry; added explicit revalidation cautions |
+
+### 14.3 Changes committed
+
+- Manufacturing handbook: `9ffe6d037a3d2afa7af14c00b10363d899e396a3`.
+- Mining handbook: `541adf74357b6799ccd693f4843b1be843fcda64`.
+- Transportation handbook: `b3019fd78ee62eca5a6412ae52ba22cd346ffa7c`.
+- Building automation and data centre handbook: `586ee0a53af7033ef1534860f91af41675a5da41`.
+- Source register expansion: `423af60bd2ca88360cec9ed018d612a29e9ae1fa`.
+
+### 14.4 Official sources consulted
+
+- CISA Critical Manufacturing Sector Cybersecurity Framework Implementation Guidance: https://www.cisa.gov/sites/default/files/publications/Critical_Manufacturing_Sector_Cybersecurity_Framework_Implementation_Guidance_FINAL_508.pdf
+- NISTIR 8183 Manufacturing Profile: https://csrc.nist.gov/pubs/ir/8183/final
+- NIST SP 1800-41 Initial Public Draft, 21 May 2026: https://csrc.nist.gov/pubs/sp/1800/41/ipd
+- MSHA PPL P25-V-01, effective 28 August 2025, stated expiry 31 March 2027: https://www.msha.gov/sites/default/files/Directive%20%26%20Guidance/PPLs/P25-V-01%20Implementation%20of%20Section%202%20of%20the%20MINER%20Act%20PPL.pdf
+- MSHA MINER Act overview: https://arlweb.msha.gov/MinerAct/2006mineract.pdf
+- IMO Maritime Cyber Risk: https://www.imo.org/en/ourwork/security/pages/cyber-security.aspx
+- OCIMF shipboard cybersecurity guidelines, 5th edition, 2024: https://www.ocimf.org/publications/information-papers/the-guidelines-on-cybersecurity-onboard-ships
+- ENISA transport sector: https://www.enisa.europa.eu/topics/cybersecurity-of-critical-sectors/transport
+- US FTA cybersecurity resources for transit agencies: https://www.transit.dot.gov/regulations-and-programs/safety/cybersecurity-resources-transit-agencies
+- TSA passenger rail directive 1582-21-01C, historical published version with stated expiry 24 October 2025: https://www.tsa.gov/sites/default/files/security_directive_1582-21-01c_and_memo_508c.pdf
+- BACnet Secure Connect: https://bacnetinternational.org/bacnetsc/
+- Uptime Institute data centre cybersecurity briefing: https://intelligence.uptimeinstitute.com/resource/scoping-data-center-cybersecurity
+
+**Status:** These are sector handbook depth improvements and selected-source checks. They do not constitute facility certification, safety case approval, mine plan approval, transport operating authority or a legal applicability determination.
+
+## 15. Audit status and change control
 
 This document is the initial baseline. It must be updated as each audit workstream is completed.
 
