@@ -283,6 +283,57 @@ The next work should proceed in this order:
 6. Inspect CI workflow execution and perform repository-wide Markdown, link and Mermaid validation.
 7. Assign chapter scores only after the relevant evidence has been collected.
 
+## 12. Standards and framework validation — first pass (2026-11-27)
+
+### 12.1 Official-source checks completed
+
+The following publisher/issuer pages were checked during this pass:
+
+| Reference | Verified metadata or status | Audit implication |
+|---|---|---|
+| ISA/IEC 62443 | ISA's catalogue lists ANSI/ISA-62443-2-1-2024 and ISA-TR62443-2-2-2025 alongside parts with earlier publication dates | Edition control must be part-specific; do not state a single year for the whole series |
+| IEC 62443-3-2 | IEC 62443-3-2:2020 is listed as Edition 1.0 and covers the system under consideration, zones/conduits, risk assessment and target security levels | Use the exact part identifier and publication year |
+| IEC 62443-3-3 | IEC 62443-3-3:2013 and its 2014 corrigendum are listed | Do not infer that all parts have been refreshed with the 2024/2025 publications |
+| IEC 62443-4-1 | IEC 62443-4-1:2018 is listed as Edition 1.0; the IEC page also shows Edition 2.0 under development | Monitor the project; do not cite a forecast as a published edition |
+| IEC 61508-1 | IEC 61508-1:2010 Edition 2 is listed, while a 2026 Edition 3 pre-release is also exposed by IEC | Treat pre-release material as non-final; validate each part's status individually |
+| IEC 61511-1 | IEC 61511-1:2016+A1:2017 consolidated Edition 2.1 is listed for process-industry SIS | Explicitly map functional-safety scope and lifecycle dependencies |
+| ISO/IEC 27001 | ISO/IEC 27001:2022 has published Amendment 1:2024 | Include applicable amendments in the controlled edition record |
+| ISO/IEC 27002 | ISO/IEC 27002:2022 is published as information security control guidance | Do not confuse guidance with independently certifiable ISMS requirements |
+| ISO/IEC 42001 | ISO/IEC 42001:2023 is published as an AI management system standard | Include in AI governance context, not as an OT control catalogue |
+| NIST SP 800-82 | Rev. 4 Initial Public Draft was published 2026-09-21; comments due 2026-11-30 | Rev. 3 remains the final publication until NIST publishes a final Rev. 4 |
+
+### 12.2 Material findings added
+
+| ID | Priority | Finding | Disposition |
+|---|---|---|---|
+| F-13 | High | Standards chapter did not provide a consolidated edition watch for all standards specifically requested in the project quality plan | Added dated publisher-verified edition watch to UOTS-05-STANDARDS |
+| F-14 | High | IEC 61508 and IEC 61511 functional-safety relationships were not adequately represented in the standards chapter's main reference model | Added explicit functional-safety boundary, lifecycle coordination warning and part-specific edition notes |
+| F-15 | Medium | ISO/IEC 42001 was not explicitly integrated into the standards edition register | Added AI management system standard context and source record |
+| F-16 | High | The standards documentation did not surface the ISA publisher's explicit restrictions concerning use of ISA intellectual property in AI tools | Added a copyright and AI handling warning; only public bibliographic metadata and original summaries are used |
+| F-17 | Medium | IEC 62443 quick guide omitted the recently listed ISA-TR62443-2-2-2025 and did not distinguish a technical report from a normative requirements standard | Updated the quick guide and clarified part-specific edition handling |
+
+### 12.3 Changes committed
+
+- Updated `05-Standards-and-Frameworks/OT-STANDARDS-FRAMEWORKS-AND-COMPLIANCE-ENGINEERING.md` to version 1.1 with the dated standards watch, functional-safety boundary, NIST draft status and copyright/AI caution.
+- Updated `05-Standards-and-Frameworks/IEC-62443-SERIES-IMPLEMENTATION-GUIDE.md` with edition-aware references, the 2024 and 2025 ISA catalogue entries, supplier/product scope clarification and AI/IP caution.
+- Expanded `references/SOURCE-REGISTER.md` with official ISA, IEC, ISO and NIST metadata sources.
+
+### 12.4 Primary sources consulted
+
+- ISA/IEC 62443 series catalogue: https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards
+- IEC 62443-3-2:2020: https://webstore.iec.ch/en/publication/30727
+- IEC 62443-3-3:2013: https://webstore.iec.ch/en/publication/7033
+- IEC 62443-4-1:2018: https://webstore.iec.ch/en/publication/33615
+- IEC 61508-1:2010: https://webstore.iec.ch/en/publication/5515
+- IEC 61508-1 Edition 3 pre-release: https://webstore.iec.ch/en/publication/117296
+- IEC 61511-1:2016+A1:2017: https://webstore.iec.ch/en/publication/61289
+- ISO/IEC 27001:2022/Amd 1:2024: https://www.iso.org/standard/88435.html
+- ISO/IEC 27002:2022: https://www.iso.org/standard/75652.html
+- ISO/IEC 42001:2023: https://www.iso.org/standard/42001
+- NIST SP 800-82 Rev. 4 Initial Public Draft: https://csrc.nist.gov/pubs/sp/800/82/r4/ipd
+
+**Status:** This is a metadata and scope validation pass. It does not constitute clause-by-clause conformity assessment or a final standards mapping. The NIST Rev. 4 comment deadline is imminent and should be rechecked after 2026-11-30.
+
 ## 11. Audit status and change control
 
 This document is the initial baseline. It must be updated as each audit workstream is completed.
