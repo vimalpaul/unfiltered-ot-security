@@ -283,51 +283,9 @@ The next work should proceed in this order:
 6. Inspect CI workflow execution and perform repository-wide Markdown, link and Mermaid validation.
 7. Assign chapter scores only after the relevant evidence has been collected.
 
-## 13. GCC regulatory source validation — first pass (2026-11-27)
+## 11. Standards and framework validation — first pass (2026-11-27)
 
-### 13.1 Official-source checks completed
-
-| Jurisdiction | Official source evidence | Safe statement | Open validation |
-|---|---|---|---|
-| Saudi Arabia | NCA's OTCC page identifies OTCC-1:2022, published 2 June 2022, as OT minimum cybersecurity requirements and an extension to ECC | An OT-specific national control publication exists | Confirm entity/facility applicability, control level, current methodology and assessment tool |
-| UAE federal | UAE Government CIIP Policy page, updated 2 July 2026 | National CII governance and protection policy exists | Review full policy, CII designation, implementing instruments and entity-specific obligations |
-| Dubai | DESC standards page identifies a DESC ICS Standard and states its scope includes Dubai government and semi-government entities operating critical infrastructure and/or OT | A Dubai-specific ICS/OT standard and scope statement exist | Obtain controlled standard, clause identifiers, current edition and exact entity applicability |
-| Qatar | Q-CERT hosts the National ICS Security Standard v3.1 | An official-hosted ICS baseline document is identifiable | Current effective version, formal adoption, covered entities and assessment process remain unconfirmed |
-| Bahrain | NCSC Baseline Cyber Security Controls page and PDF; CNI controls page | Baseline includes OT/IoT Domain 6; published PDF states mandatory application to public/private entities that are part of CNI; NCSC lists sector-specific CNI control resources | Confirm current controlled version, CNI designation, entity scope, sector-specific requirements and assessment mechanism |
-| Kuwait | CITRA-hosted national cybersecurity strategy | Strategy is a research lead and national policy context | Current binding instruments, competent authority and OT-specific mandatory requirements remain unverified |
-| Oman | No definitive current universally applicable OT control catalogue established in this pass | No positive claim is made | Continue primary-source research; do not invent a control set |
-
-### 13.2 Material regulatory findings
-
-| ID | Priority | Finding | Disposition |
-|---|---|---|---|
-| F-18 | High | The GCC register omitted Qatar's official-hosted National ICS Security Standard v3.1 as a distinct entry | Added the source with explicit current-status and applicability caveats |
-| F-19 | High | Bahrain's baseline OT/IoT domain and CNI applicability were not sufficiently detailed in the compact register | Added NCSC baseline and PDF sources, the CNI sector source, and high-level Domain 6 topics |
-| F-20 | High | The UAE national CIIP Policy and Dubai DESC ICS Standard could be conflated | Clarified national CII policy versus Dubai-specific ICS/OT standard and prohibited UAE-wide generalization |
-| F-21 | Medium | GCC source register needed a dated primary-source refresh and additional official URLs | Added UAE, Dubai, Qatar and Bahrain primary sources with a 2026-11-27 review note |
-
-### 13.3 Changes committed
-
-- Updated `06-Global-Regulatory-Mapping/MIDDLE-EAST-AND-GCC-REGULATORY-REGISTER.md` with Qatar National ICS Standard v3.1, Bahrain NCSC baseline/CNI controls, and UAE CIIP Policy.
-- Updated `06-Global-Regulatory-Mapping/GLOBAL-OT-REGULATORY-AND-CRITICAL-INFRASTRUCTURE-PLAYBOOK.md` with more precise Bahrain Domain 6 context, official source links, and UAE federal/Dubai scope distinctions.
-- Expanded `references/SOURCE-REGISTER.md` with official GCC authority and government sources.
-
-### 13.4 Primary sources consulted
-
-- Saudi NCA OTCC: https://nca.gov.sa/en/regulatory-documents/controls-list/otcc/
-- UAE Government CIIP Policy: https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/cyber-activities/Critical-Information-Infrastructure-Protection-Policy
-- Dubai DESC Standards and Policies: https://www.desc.gov.ae/regulations/standards-policies/
-- Qatar National ICS Security Standard v3.1: https://qcert.ncsa.gov.qa/sites/default/files/public/documents/cs_national_ics_security_standard_en_v3.1_0.pdf
-- Bahrain NCSC Baseline Cyber Security Controls: https://ncsc.gov.bh/en/standards-controls/baseline-cyber-security-controls
-- Bahrain Baseline Controls PDF: https://www.ncsc.gov.bh/assets/static_images/policies/baseline-cybersecurity-controls-v1.pdf
-- Bahrain NCSC CNI Cybersecurity Controls: https://www.ncsc.gov.bh/en/standards-controls/CNI-cybersecurity-controls
-- Bahrain National Cyber Security Strategy 2025–2028: https://ncsc.gov.bh/en/national-strategy/bahrain-national-cyber-security-strategy-2025-2028.html
-
-**Status:** First-pass source verification only. No complete legal applicability opinion or control-by-control compliance crosswalk has been performed.
-
-## 12. Standards and framework validation — first pass (2026-11-27)
-
-### 12.1 Official-source checks completed
+### 11.1 Official-source checks completed
 
 The following publisher/issuer pages were checked during this pass:
 
@@ -344,7 +302,7 @@ The following publisher/issuer pages were checked during this pass:
 | ISO/IEC 42001 | ISO/IEC 42001:2023 is published as an AI management system standard | Include in AI governance context, not as an OT control catalogue |
 | NIST SP 800-82 | Rev. 4 Initial Public Draft was published 2026-09-21; comments due 2026-11-30 | Rev. 3 remains the final publication until NIST publishes a final Rev. 4 |
 
-### 12.2 Material findings added
+### 11.2 Material findings added
 
 | ID | Priority | Finding | Disposition |
 |---|---|---|---|
@@ -354,13 +312,13 @@ The following publisher/issuer pages were checked during this pass:
 | F-16 | High | The standards documentation did not surface the ISA publisher's explicit restrictions concerning use of ISA intellectual property in AI tools | Added a copyright and AI handling warning; only public bibliographic metadata and original summaries are used |
 | F-17 | Medium | IEC 62443 quick guide omitted the recently listed ISA-TR62443-2-2-2025 and did not distinguish a technical report from a normative requirements standard | Updated the quick guide and clarified part-specific edition handling |
 
-### 12.3 Changes committed
+### 11.3 Changes committed
 
 - Updated `05-Standards-and-Frameworks/OT-STANDARDS-FRAMEWORKS-AND-COMPLIANCE-ENGINEERING.md` to version 1.1 with the dated standards watch, functional-safety boundary, NIST draft status and copyright/AI caution.
 - Updated `05-Standards-and-Frameworks/IEC-62443-SERIES-IMPLEMENTATION-GUIDE.md` with edition-aware references, the 2024 and 2025 ISA catalogue entries, supplier/product scope clarification and AI/IP caution.
 - Expanded `references/SOURCE-REGISTER.md` with official ISA, IEC, ISO and NIST metadata sources.
 
-### 12.4 Primary sources consulted
+### 11.4 Primary sources consulted
 
 - ISA/IEC 62443 series catalogue: https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards
 - IEC 62443-3-2:2020: https://webstore.iec.ch/en/publication/30727
@@ -376,7 +334,97 @@ The following publisher/issuer pages were checked during this pass:
 
 **Status:** This is a metadata and scope validation pass. It does not constitute clause-by-clause conformity assessment or a final standards mapping. The NIST Rev. 4 comment deadline is imminent and should be rechecked after 2026-11-30.
 
-## 11. Audit status and change control
+## 12. GCC regulatory source validation — first pass (2026-11-27)
+
+### 12.1 Official-source checks completed
+
+| Jurisdiction | Official source evidence | Safe statement | Open validation |
+|---|---|---|---|
+| Saudi Arabia | NCA's OTCC page identifies OTCC-1:2022, published 2 June 2022, as OT minimum cybersecurity requirements and an extension to ECC | An OT-specific national control publication exists | Confirm entity/facility applicability, control level, current methodology and assessment tool |
+| UAE federal | UAE Government CIIP Policy page, updated 2 July 2026 | National CII governance and protection policy exists | Review full policy, CII designation, implementing instruments and entity-specific obligations |
+| Dubai | DESC standards page identifies a DESC ICS Standard and states its scope includes Dubai government and semi-government entities operating critical infrastructure and/or OT | A Dubai-specific ICS/OT standard and scope statement exist | Obtain controlled standard, clause identifiers, current edition and exact entity applicability |
+| Qatar | Q-CERT hosts the National ICS Security Standard v3.1 | An official-hosted ICS baseline document is identifiable | Current effective version, formal adoption, covered entities and assessment process remain unconfirmed |
+| Bahrain | NCSC Baseline Cyber Security Controls page and PDF; CNI controls page | Baseline includes OT/IoT Domain 6; published PDF states mandatory application to public/private entities that are part of CNI; NCSC lists sector-specific CNI control resources | Confirm current controlled version, CNI designation, entity scope, sector-specific requirements and assessment mechanism |
+| Kuwait | CITRA-hosted national cybersecurity strategy | Strategy is a research lead and national policy context | Current binding instruments, competent authority and OT-specific mandatory requirements remain unverified |
+| Oman | No definitive current universally applicable OT control catalogue established in this pass | No positive claim is made | Continue primary-source research; do not invent a control set |
+
+### 12.2 Material regulatory findings
+
+| ID | Priority | Finding | Disposition |
+|---|---|---|---|
+| F-18 | High | The GCC register omitted Qatar's official-hosted National ICS Security Standard v3.1 as a distinct entry | Added the source with explicit current-status and applicability caveats |
+| F-19 | High | Bahrain's baseline OT/IoT domain and CNI applicability were not sufficiently detailed in the compact register | Added NCSC baseline and PDF sources, the CNI sector source, and high-level Domain 6 topics |
+| F-20 | High | The UAE national CIIP Policy and Dubai DESC ICS Standard could be conflated | Clarified national CII policy versus Dubai-specific ICS/OT standard and prohibited UAE-wide generalization |
+| F-21 | Medium | GCC source register needed a dated primary-source refresh and additional official URLs | Added UAE, Dubai, Qatar and Bahrain primary sources with a 2026-11-27 review note |
+
+### 12.3 Changes committed
+
+- Updated `06-Global-Regulatory-Mapping/MIDDLE-EAST-AND-GCC-REGULATORY-REGISTER.md` with Qatar National ICS Standard v3.1, Bahrain NCSC baseline/CNI controls, and UAE CIIP Policy.
+- Updated `06-Global-Regulatory-Mapping/GLOBAL-OT-REGULATORY-AND-CRITICAL-INFRASTRUCTURE-PLAYBOOK.md` with more precise Bahrain Domain 6 context, official source links, and UAE federal/Dubai scope distinctions.
+- Expanded `references/SOURCE-REGISTER.md` with official GCC authority and government sources.
+
+### 12.4 Primary sources consulted
+
+- Saudi NCA OTCC: https://nca.gov.sa/en/regulatory-documents/controls-list/otcc/
+- UAE Government CIIP Policy: https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/cyber-activities/Critical-Information-Infrastructure-Protection-Policy
+- Dubai DESC Standards and Policies: https://www.desc.gov.ae/regulations/standards-policies/
+- Qatar National ICS Security Standard v3.1: https://qcert.ncsa.gov.qa/sites/default/files/public/documents/cs_national_ics_security_standard_en_v3.1_0.pdf
+- Bahrain NCSC Baseline Cyber Security Controls: https://ncsc.gov.bh/en/standards-controls/baseline-cyber-security-controls
+- Bahrain Baseline Controls PDF: https://www.ncsc.gov.bh/assets/static_images/policies/baseline-cybersecurity-controls-v1.pdf
+- Bahrain NCSC CNI Cybersecurity Controls: https://www.ncsc.gov.bh/en/standards-controls/CNI-cybersecurity-controls
+- Bahrain National Cyber Security Strategy 2025–2028: https://ncsc.gov.bh/en/national-strategy/bahrain-national-cyber-security-strategy-2025-2028.html
+
+**Status:** First-pass source verification only. No complete legal applicability opinion or control-by-control compliance crosswalk has been performed.
+
+## 13. Industry engineering depth validation — first pass (2026-11-27)
+
+### 13.1 Files inspected
+
+| File | Previous size | Initial assessment | Action |
+|---|---:|---|---|
+| `07-Industry-and-Use-Cases/INDUSTRY-SPECIFIC-OT-SECURITY-ENGINEERING-PLAYBOOK.md` | 63,544 characters | Substantial cross-sector playbook with process context, common architecture, scenarios, assessments, AI, labs and source discipline | Retained as the central cross-sector reference; use it as the shared framework and avoid duplicating it wholesale |
+| `07-Industry-and-Use-Cases/OIL-GAS-AND-LNG-OT-SECURITY.md` | 3,464 characters | Short orientation; lacked detailed process/asset mapping, engineering workflows, detection, recovery and deliverables | Expanded to version 1.1 |
+| `07-Industry-and-Use-Cases/POWER-GRID-AND-SUBSTATION-OT-SECURITY.md` | 2,870 characters | Short orientation; limited control centre/substation architecture, protection engineering, detection and restoration detail | Expanded to version 1.1 |
+| `07-Industry-and-Use-Cases/WATER-AND-WASTEWATER-OT-SECURITY.md` | 2,365 characters | Short orientation; limited treatment taxonomy, public-health dependencies, incident workflow and utility evidence | Expanded to version 1.1 |
+
+### 13.2 Findings
+
+| ID | Priority | Finding | Disposition |
+|---|---|---|---|
+| F-22 | High | Oil/gas handbook did not connect process segments, safety-related functions, remote access, controller integrity, detections and recovery into one engineering workflow | Added process/asset matrix, architecture, threat/control/detection table, assessment workflow, incident and recovery model, deliverables and metrics |
+| F-23 | High | Power handbook did not sufficiently distinguish control centre, station bus, process bus, protection, telecom and time dependencies | Added reference architecture, protocol-specific concerns, protection setting integrity, time monitoring, response constraints and recovery evidence |
+| F-24 | High | Water handbook lacked a process-oriented taxonomy and detailed public-health/quality response model | Added water/wastewater process taxonomy, criticality, architecture, dosing/quality scenarios, local fallback and recovery workflows |
+| F-25 | High | Sector guides did not adequately distinguish general engineering recommendations from jurisdiction-specific obligations | Added explicit applicability caveats and a US-only NERC CIP/EPA context |
+| F-26 | Medium | Recent sector evidence was not reflected in the supporting handbooks or source register | Added FBI/EPA July 2026 water-sector PSA, NIST October 2026 water-sector article, multi-agency asset taxonomy, NERC CIP catalogue and DOE CESER exercise source |
+| F-27 | High | A historical TSA Pipeline-2021-01E document could be misread as a current directive even though its stated expiry date was 2 May 2026 | Handbook now labels it historical and requires checking the latest TSA directive/renewal before use |
+
+### 13.3 Changes committed
+
+- Oil, gas, LNG and petrochemical handbook: commit `b881c94f325d13d032b4854c571d850662c5096e`.
+- Power generation, grid and substation handbook: commit `1b830738a2c2796bc25c343c7c04183ed80e2a08`.
+- Water and wastewater handbook: commit `08b2717fdb612b107c73654e8f3e1115e663f307`.
+- Source register expanded with sector-specific official sources: commit `964f3be19f36203c4fcc542a35ac5a2958377454`.
+
+### 13.4 Official sources consulted
+
+- FBI/EPA, water-sector PLC targeting PSA, 30 July 2026: https://www.fbi.gov/investigate/cyber/alerts/2026/malicious-cyber-actors-targeting-water-and-wastewater-sector-internet--facing-programmable-logic-controllers-causing-operational-disruptions
+- EPA water/wastewater cybersecurity guidance: https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P101B9KL.txt
+- CISA-led OT Asset Inventory Guidance: https://www.epa.gov/system/files/documents/2025-09/joint-guide-foundations-for-ot-cybersecurity-asset-inventory-guidance_508c.pdf
+- NIST water/wastewater OT security insight, 1 October 2026: https://www.nist.gov/blogs/cybersecurity-insights/securing-water-and-wastewater-operational-technology-environments
+- NERC CIP standards catalogue: https://www.nerc.com/standards/reliability-standards/cip
+- NERC CIP-003-10: https://www.nerc.com/standards/reliability-standards/cip/cip-003-10
+- NERC CIP-007-6: https://prod.nerc.com/standards/reliability-standards/cip/cip-007-6
+- NERC CIP-010-4: https://www.nerc.com/standards/reliability-standards/cip/cip-010-4
+- NERC CIP-013-2: https://www.nerc.com/standards/reliability-standards/cip/cip-013-2
+- NERC/FERC CIP-014-4 approval announcement, 10 September 2026: https://www.nerc.com/newsroom/ferc-approves-reliability-standard-for-physical-security
+- DOE CESER oil and natural gas security exercises, 22 June 2026: https://www.energy.gov/ceser/articles/ceser-supports-oil-and-natural-gas-subsector-critical-energy-security-exercises
+- TSA Pipeline-2021-01E (historical 2025 version; stated expiry 2 May 2026): https://www.tsa.gov/sites/default/files/tsa-security-directive-pipeline-2021-01e-and-memo-508c.pdf
+
+**Status:** This is a handbook depth and selected-source validation pass. It does not constitute site-specific engineering approval, protection study, process safety assessment, water quality determination or legal applicability opinion.
+
+
+
+## 14. Audit status and change control
 
 This document is the initial baseline. It must be updated as each audit workstream is completed.
 
