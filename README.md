@@ -16,6 +16,9 @@ Oil and gas across upstream, midstream, and downstream; LNG and petrochemicals; 
 
 ## Start here
 
+- [Master Repository Quality Audit (UOTS-21)](00-Project-Governance/UOTS-21-MASTER-REPOSITORY-QUALITY-AUDIT.md) - repository inventory, audit findings, scorecard and remediation roadmap.
+
+
 - [Project charter](00-Project-Governance/PROJECT-CHARTER.md)
 - [Documentation standard](00-Project-Governance/DOCUMENTATION-STANDARD.md)
 - [Research and verification methodology](00-Project-Governance/RESEARCH-AND-VERIFICATION-METHODOLOGY.md)
