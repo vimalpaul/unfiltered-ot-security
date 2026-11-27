@@ -110,6 +110,8 @@ Do not use a blank cell to mean both "not applicable" and "not yet assessed". Us
 - [ ] Change management and rollback requirements documented.
 - [ ] Final report recipients and distribution approved.
 
+The canonical OT asset identity, linked interface and dependency model, evidence confidence and criticality approval workflow are defined in the [OT Asset Inventory, Dependency Mapping and Criticality Engineering Playbook](../03-Industrial-Assets-and-Systems/OT-ASSET-INVENTORY-AND-CRITICALITY.md). Keep these templates aligned with that data model; do not create duplicate Asset_ID values for individual network interfaces.
+
 # 4. OT asset inventory register
 
 One row per uniquely managed asset. Where a device has multiple interfaces, model interfaces in a linked interface table rather than duplicating the asset identity.
