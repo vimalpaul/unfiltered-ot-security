@@ -471,7 +471,47 @@ The following publisher/issuer pages were checked during this pass:
 
 **Status:** These are sector handbook depth improvements and selected-source checks. They do not constitute facility certification, safety case approval, mine plan approval, transport operating authority or a legal applicability determination.
 
-## 15. Audit status and change control
+## 15. Cross-industry asset inventory and criticality integration — first pass (2026-11-27)
+
+### 15.1 Existing repository content inspected
+
+| File | Existing purpose | Integration decision |
+|---|---|---|
+| `03-Industrial-Assets-and-Systems/OT-ASSET-INVENTORY-AND-CRITICALITY.md` | Short inventory and consequence overview | Expanded as the canonical inventory data model and governance playbook |
+| `03-Industrial-Assets-and-Systems/INDUSTRIAL-ASSET-TECHNICAL-REFERENCE.md` | Detailed PLC, RTU, DCS, SCADA, HMI, SIS, IED and supporting asset reference | Retained asset-family technical explanations; added cross-reference to the canonical inventory playbook |
+| `02-Industrial-Architecture/REFERENCE-ARCHITECTURE-AND-ZONES.md` | Zones, conduits, architecture workflow and communication-flow design | Added a reference to the canonical Asset_ID, interface and dependency model |
+| `18-Templates-and-Reference-Materials/OT-SECURITY-TEMPLATES-AND-PROFESSIONAL-DELIVERABLES-PLAYBOOK.md` | Reusable asset, criticality, risk, zone and evidence registers | Added alignment note to prevent duplicate Asset_ID and interface records |
+
+### 15.2 Findings and remediation
+
+| ID | Priority | Finding | Disposition |
+|---|---|---|---|
+| F-34 | High | The original inventory overview did not define a sufficiently detailed relational data model for assets, interfaces, dependencies, evidence, configuration and criticality | Expanded the canonical playbook with linked logical registers and an ER model |
+| F-35 | High | Asset criticality, cyber exposure, vulnerability status, cyber risk and recovery priority could be conflated | Defined them as separate concepts and introduced an explicit consequence-based screening workflow |
+| F-36 | High | Inventory evidence quality and unknown attributes were not governed consistently | Added provenance, confidence levels, reconciliation queue and unknown-value handling |
+| F-37 | High | Safety and environmental consequences require specialist authority and cannot be averaged away in a generic score | Added safety/environmental escalation gates and prohibition on inferring SIL or safety independence |
+| F-38 | Medium | Asset inventory, architecture and reusable template documents risked diverging data fields and duplicate records | Added cross-references to the canonical Asset_ID, interface and relationship model |
+| F-39 | Medium | Lifecycle events and common dependencies were not represented in enough detail in the concise inventory overview | Added relationship types, common-cause dependencies, lifecycle triggers, ownership and quality gates |
+
+### 15.3 Changes committed
+
+- Canonical OT asset inventory and criticality playbook: `c0937cbca2dac768b21b5c5ac1137a920f95b4d8`.
+- Industrial asset technical reference cross-link: `0b942f40b2327834090ae27c3b3c9c85251ef618`.
+- Architecture and zones cross-link: `3b624ff440970c708496557391076650f79942d3`.
+- Professional templates cross-link: `067bddbb6da201536457961246a6b29fce0aaebc`.
+
+### 15.4 Canonical model decisions
+
+- A stable Asset_ID represents one uniquely managed asset; multiple interfaces do not create duplicate asset identities.
+- Interfaces, dependencies, evidence, configuration baselines, vulnerability records, remote access and backups are linked records.
+- Process criticality is not the same as cyber exposure, vulnerability status, cyber risk or recovery priority.
+- The example 1–5 consequence scale and C1–C5 bands are illustrative screening aids only. They are not IEC 62443 Security Levels, SIL, CVSS or a substitute for site risk and safety methods.
+- High or unknown safety/environmental consequence requires review by the responsible process, functional-safety or environmental authority.
+- Sensitive facility inventory and topology are not to be published in the public repository; only schemas and synthetic examples are included.
+
+**Status:** The canonical model and cross-references are published. The next assurance step is to implement and test the data model in reusable deliverables, then validate consistency against sector handbooks and risk/architecture workflows.
+
+## 16. Audit status and change control
 
 This document is the initial baseline. It must be updated as each audit workstream is completed.
 
